@@ -593,11 +593,11 @@
                   screeningText.classList.add("d-none");
                   //show laser
                   document.getElementById("laser").classList.remove("laser");
-                  // sleep(3);
-                  // detect();
-                  setTimeout(() => {
-                    detect();
-                  }, 2000);
+                  sleep(5);
+                  detect();
+                  // setTimeout(() => {
+                  //   detect();
+                  // }, 2000);
                 })
                 .catch((err) => {
                   console.error(err);
