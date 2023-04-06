@@ -1,0 +1,1437 @@
+/**:::::::::::::::::-::::::::::::::::::::**/
+/**:::::::::::::::::992px::::::::::::::::::::**/
+@media (max-width: 994px) {
+
+
+  /*** tabs-content ***/
+  #tabs-content .tabs_content {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .tabs_cbx_list .tcbx_list li a span {
+    font-size: 17px;
+  }
+
+  /*** facturas_area ***/
+  .facturas_area {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .facturas_sub_total .sub_total_01,
+  .facturas_total .total-01,
+  .Pedidos_total .total-01 {
+    padding: 0px 15px;
+  }
+
+  /*** Proyecciones_are ***/
+  .Proyecciones_are {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Proyecciones_are .facturas_list li a {
+    font-size: 17px;
+  }
+
+  .ventas_content .ventas_title span {
+    font-size: 17px;
+  }
+
+  .ventas_content .ventas_title .v_usd {
+    font-size: 17px;
+  }
+
+  .Proyecciones_cplus .tabs_plus_btn .btn_icon_toggle {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  /*** reportes_cliente_area ***/
+  .reportes_cliente_area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*** list all ***/
+  .number_id,
+  .list_id_001 li a span {
+    font-size: 16px;
+  }
+
+  .list_id_001 li a i {
+    font-size: 15px;
+  }
+
+  /*** reporte ***/
+  .reporte_btns a {
+    padding: 0px 22px;
+    height: 68px;
+    font-size: 17px;
+  }
+
+  .reporte_btns a .next_page_icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  /*** devolucioness ***/
+  .devoluciones_area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*** Articulos ***/
+  .shoping_card_area {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 35px 95px 125px;
+  }
+
+  /*** pedidos_en_espera ***/
+  .rs_grid_22 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*** solicitudes ***/
+  .max-rem {
+    margin: 35px 50px 120px !important;
+    max-width: auto;
+  }
+
+
+
+}
+
+
+
+
+
+
+/**:::::::::::::::::-::::::::::::::::::::**/
+/**:::::::::::::::::768px::::::::::::::::::::**/
+@media (max-width: 770px) {
+
+
+  /*** tabs-content ***/
+  .btn_icon_toggle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .btn_icon_toggle i {
+    font-size: 20px;
+  }
+
+  .tabs_plus_btn .dropdown_list li {
+    margin-bottom: 10px;
+  }
+
+  .tabs_plus_btn .dropdown_list li a {
+    padding: 8px 0px;
+    font-size: 14px;
+  }
+
+  #tabs-boxs {
+    margin: 35px 15px;
+  }
+
+  #tabs-content {
+    padding: 0px 15px 100px;
+  }
+
+  .tabs_plus_btn .dropdown_list {
+
+    left: -150px;
+    top: 30px;
+  }
+
+  .tab-link-txt {
+    font-size: 17px;
+  }
+
+  .tabs_content_bx {
+    padding: 18px;
+  }
+
+
+
+  /*** facturas_area ***/
+  .facturas_area {
+    gap: 16px;
+    margin: 35px 15px 115px;
+  }
+
+
+  .facturas_sub_total .sub_total_01,
+  .facturas_total .total-01 {
+    font-size: 17px;
+    margin: 24px 0px;
+  }
+
+  /**:::::::::- table -:::::::::**/
+  .table>:not(caption)>*>* {
+    padding: 20px 15px;
+  }
+
+  .table_data .table thead tr th {
+    font-size: 17px;
+  }
+
+  /*** Proyecciones_are ***/
+  .Proyecciones_are {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 35px 15px 120px !important;
+  }
+
+  /*** Proyecciones_are ***/
+  .Proyecciones_are .facturas_list li a {
+    font-size: 16px;
+  }
+
+  .ventas_content .ventas_title span {
+    font-size: 16px;
+  }
+
+  .ventas_content .ventas_title .v_usd {
+    font-size: 16px;
+  }
+
+
+  .Proyecciones_cplus .tabs_plus_btn .dropdown_list li a {
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+
+  .ventas_content .ventas_usd .v_usd02 {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .Proyecciones-calender {
+    margin: 30px 15px 0px;
+  }
+
+  /*** reportes_cliente_area ***/
+  .reportes_cliente_area {
+    padding: 35px 15px 125px;
+  }
+
+  .reporte_cliente_content {
+    padding: 20px;
+  }
+
+  /*** list all ***/
+  .list_id_001 li {
+    margin-bottom: 14px;
+  }
+
+  .list_id_001 li a span {
+    font-size: 15px;
+  }
+
+  /*** reporte ***/
+  .pages_nxt_are {
+    margin: 35px 15px;
+  }
+
+  .reporte_btns a {
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+
+  /*** devolucioness ***/
+  .devoluciones_area {
+    margin: 35px 15px 120px;
+  }
+
+  .devoluciones-2,
+  .blue_areas01 {
+    margin: 35px 15px 120px;
+  }
+
+  /**-::- select -::-**/
+  .select_bx {
+    height: 58px;
+    font-size: 17px;
+  }
+
+  .st_from textarea {
+    font-size: 17px;
+  }
+
+  .st_from textarea {
+    font-size: 17px;
+  }
+
+  .option_s .option_list {
+    font-size: 17px;
+  }
+
+  .option_whitebx h3 {
+    font-size: 16px;
+  }
+
+  /**-::- carrito_are -::-**/
+  .total-04,
+  .button_en .btn-espera {
+    font-size: 17px;
+    padding: 15px 15px !important;
+
+  }
+
+  /**-::::::::- reportes_pedidos  -:::::::::-**/
+  .reportes_pedidos {
+    margin: 35px 15px 100px;
+  }
+
+  .sle_bxrp .icon_down {
+    margin-left: 15px;
+  }
+
+  .reportes_pedidos .buscar-rp {
+    font-size: 17px;
+    padding: 16px 15px !important;
+  }
+
+  /*** Articulos ***/
+  .shoping_card_area {
+    gap: 20px;
+    padding: 35px 20px 125px;
+  }
+
+  .Unidad_opt .select_content h3,
+  .s_card_info .scard_title {
+    font-size: 16px;
+  }
+
+  .usd_s-card .select_bx #select_data {
+    font-size: 14px;
+  }
+
+  .usd_s-card .select_bx .icon_down {
+    font-size: 12px;
+
+  }
+
+  .s_card_box .disp {
+    font-size: 15px;
+  }
+
+  .Unidad_opt .select_content .select_bx {
+    height: 36px;
+  }
+
+  .Unidad_opt .select_content .select_bx #select_data {
+    font-size: 15px;
+  }
+
+  .Unidad_opt .select_content .select_bx .icon_down {
+    font-size: 14px;
+    margin-left: 3px;
+  }
+
+  .Unidad_opt .cant_are h3 {
+    font-size: 16px;
+  }
+
+  .Unidad_opt .cant_are .number_content .count_numbers {
+    height: 36px;
+  }
+
+
+  /*** pedidos_en_espera ***/
+  .rs_grid_22 {
+    margin: 35px 15px 120px;
+  }
+
+  .rs_grid_22 .dropdown_list {
+    left: -130px;
+    top: 70px;
+  }
+
+  /*** calender ***/
+  .calender_area {
+    font-size: 17px;
+    height: 58px;
+  }
+
+  /*** button ***/
+  .white_btn_are .wt_Btn {
+    font-size: 17px;
+    padding: 16px 15px !important;
+  }
+
+  /*** solicitudes ***/
+  .solicitudes-2 {
+    margin: 35px 15px 120px;
+  }
+
+
+
+  .stInput_from {
+    height: 58px;
+    font-size: 17px;
+  }
+
+  /*** search filter ***/
+  .search_areaF {
+    height: 58px;
+    font-size: 17px;
+  }
+
+  .search_op_list {
+    font-size: 17px;
+  }
+
+}
+
+
+
+
+
+/**:::::::::::::::::-::::::::::::::::::::**/
+/**:::::::::::::::::600px::::::::::::::::::::**/
+@media (max-width: 600px) {
+  .plr {
+    padding: 0 14px;
+  }
+
+  .ptb {
+    padding: 14px 0;
+  }
+
+  .plrtb {
+    padding: 14px;
+  }
+
+  /* :::::::::::::::::: footer ::::::::::::::::::**/
+  .footer .navbar .nav-item .nav-link span i {
+    font-size: 16px;
+  }
+
+  .footer .navbar .nav-item.center__box .nav-link span {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+  }
+
+  /* :::::::::::::::::: blue box and white box start :::::::::::::::::::::::::: */
+  .bluebox {
+    padding: 16px;
+  }
+
+  .blue-box-text {
+    width: 60%;
+  }
+
+
+
+  .sec-header {
+    font-size: 20px;
+  }
+
+  .blue-box-text h5 {
+    font-size: 15px;
+  }
+
+  .blue-box-number-button h5 {
+    font-size: 15px;
+  }
+
+  .white-box {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .white-box .dark-ash {
+    font-size: 18px;
+  }
+
+  /* ::::::::::::::::: blue box and white box end :::::::::::::::::::::::::::: */
+  /* :::::::::::::::::::::::::: white arrow button start :::::::::::::::::::::: */
+  .white-arrow-button {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+
+  /* :::::::::::::::::::::::::: white arrow button end :::::::::::::::::::::: */
+  /* ::::::::::::::::::::::::::: tab-link-wrapper start :::::::::::::::::::::::: */
+  .tab-link-wrapper {
+    justify-content: space-around !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .tab-link-wrapper .nav-link {
+    padding: 0 !important;
+    height: 60px;
+  }
+
+  .tab-link-wrapper h4 {
+    font-size: 14px;
+  }
+
+  .tab-link-wrapper .nav-link.active .tab-bottom-bar {
+    bottom: 1px;
+  }
+
+  /* :::::::::::::::::::::::::::: .tab-link-wrapper end ::::::::::::::::::::::::::::::: */
+  /***::::::::-Welcome-:::::::::***/
+  .wlc .header-wlc h1 {
+    font-size: 26px;
+  }
+
+  .wlc_area .boxwlc .link01_wlc {
+    width: 100%;
+  }
+
+  .wlc_area .logo {
+    width: 150px;
+    padding: 40px 0;
+  }
+
+  .header-wlc p {
+    font-size: 14px;
+  }
+
+  .boxwlc {
+    margin-top: 80px;
+  }
+
+  .wlc_area .boxwlc .link01_wlc {
+    font-size: 15px;
+    height: 45px;
+  }
+
+  /***:::::::::- login -::::::::***/
+  .form_header {
+    border-radius: 0px 0px 40px 40px;
+    background: var(--bg02);
+    box-shadow: var(--bxs);
+  }
+
+  .form_header .form_logo {
+    width: 90px;
+  }
+
+  .form_area .header-from h1 {
+    font-size: 20px;
+  }
+
+  .input_are label {
+    font-size: 14px;
+  }
+
+  .form_area .input_are {
+    margin-bottom: 15px;
+  }
+
+  .form_area .form_btn_01 {
+    margin: 15px 0px;
+  }
+
+  .input_are .from_int01 {
+    font-size: 15px;
+  }
+
+  .form_area .form_btn_01 {
+    font-size: 15px;
+  }
+
+  .form_area .form_footer {
+    margin-top: 15px;
+  }
+
+  .form_area .form_footer a {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  /* ::::::::::::::::: Navbar ::::::::::::::::::: */
+  nav {
+    padding: 16px 15px;
+  }
+
+  .nav-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+
+
+  /* :::::::::::::::::: banner :::::::::::::::::::::::::: */
+  .banner {
+    padding: 30px 0 80px 0;
+  }
+
+  .banner-white-box {
+    padding: 15px 0;
+  }
+
+  .banner-text {
+    margin-bottom: 10px;
+  }
+
+  .banner-white-box-container {
+    transform: translateY(-20%);
+  }
+
+  .banner-blue-box-container {
+    transform: translateY(-50%);
+  }
+
+  /** :::::::::::::: sidebar :::::::::::::: ***/
+
+  .side-bar {
+    width: 100%;
+    left: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px !important;
+  }
+
+  .sidebar_menus {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .sidebar-item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sidebar-item i {
+    font-size: 18px;
+  }
+
+  .sidebar-item-link {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 112px;
+  }
+
+  .sidebar-list {
+    padding-left: 0px;
+    width: max-content;
+  }
+
+  .btn_are_close-btns .close-btn {
+    width: 5%;
+  }
+
+  .btn_are_close-btns {
+    width: 90%;
+    height: 70px;
+    border-bottom: 1px solid rgba(215, 215, 215, 1);
+    padding: 10px 0px;
+  }
+
+  .sidebar-item-title {
+    font-size: 14px;
+  }
+
+  .side-bar_ares {
+    margin: 64px 10px;
+  }
+
+  /*** footer ***/
+  .footer {
+    z-index: 1000;
+  }
+
+  /***:::::::::::::- Devoluciones -:::::::::::::***/
+  /*** header ***/
+  .header_titles_02 h2 {
+    font-size: 18px;
+  }
+
+  .header_02 {
+    padding: 18px 15px;
+  }
+
+  .header_content .add_btn_1,
+  .header_content .header_titles_02 .icon_back_h {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .header_titles_02 {
+    gap: 10px;
+  }
+
+  .header_s .search_icon {
+    padding: 12px 20px;
+  }
+
+  .search_area .search_input {
+    font-size: 16px;
+  }
+
+  .search_area .search_input {
+    font-size: 16px;
+  }
+
+
+  .devoluciones {
+    padding: 25px 2px;
+  }
+
+  /*** tabs-content ***/
+  #tabs-content .tabs_content {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  #tabs-boxs {
+    height: 55px;
+    margin: 16px 15px;
+  }
+
+  .tab_btns a {
+    height: 55px;
+    line-height: 56px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+
+
+
+
+  .btn_icon_toggle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn_icon_toggle i {
+    font-size: 18px;
+  }
+
+  #tabs-content {
+    padding: 0px 12px 100px;
+  }
+
+  .tabs_plus_btn .dropdown_list li a {
+    font-size: 12px;
+    padding: 8px 0px;
+  }
+
+  .tabs_plus_btn .dropdown_list {
+    width: 125px;
+    left: -120px;
+    top: 25px;
+  }
+
+
+
+
+  /*** facturas_area ***/
+  .facturas_area {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+
+  .facturas_sub_total .sub_total_01,
+  .facturas_total .total-01 {
+    font-size: 16px;
+    margin: 22px 0px;
+  }
+
+  .facturas_total .total-01 {
+    padding: 16px 15px !important;
+  }
+
+  /**-::::::::- factura_area -:::::::::-**/
+  .factura-area {
+    margin: 35px 15px;
+  }
+
+  .factura-product {
+    margin: 0px 15px 115px !important;
+  }
+
+  .seemore_less_area .product-f_title {
+    font-size: 16px;
+  }
+
+  .product-f-card {
+    width: 150px !important;
+  }
+
+  .seemore_less_area,
+  .factura_usd_area,
+  .factura_cant_area {
+    width: auto;
+  }
+
+  .factura_usd_area,
+  .factura_cant_area {
+    width: auto !important;
+    margin: 15px 0px 0px 0px !important;
+  }
+
+  .factura_usd_area .product-f_title_usd {
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .factura_cant_content .number {
+    padding: 8px 20px;
+    font-size: 15px;
+    margin: 8px 0px;
+  }
+
+  /**-::::::::- Pedidos -:::::::::-**/
+  .Pedidos_total .total-01 {
+    padding: 15px !important;
+    font-size: 16px;
+  }
+
+  /**:::::::::- table -:::::::::**/
+  .table_data {
+    margin: 35px 15px 120px !important;
+    padding: 15px;
+
+  }
+
+  .table>:not(caption)>*>* {
+    padding: 10px 1px;
+  }
+
+  .table_data .table thead tr th {
+    font-size: 14px;
+  }
+
+  .table_data .table tbody tr td {
+    font-size: 13px;
+  }
+
+  /*** Proyecciones_are ***/
+  .Proyecciones_are .facturas_list li a {
+    font-size: 15px;
+  }
+
+  .Proyecciones_are {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ventas_content .ventas_title span {
+    font-size: 15px;
+  }
+
+  .ventas_content .ventas_title .v_usd {
+    font-size: 15px;
+  }
+
+  .Proyecciones_cplus .tabs_plus_btn .btn_icon_toggle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .Proyecciones_cplus .tabs_plus_btn .dropdown_list li a {
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+
+  .ventas_content {
+    padding: 12px;
+    margin: 12px 0px;
+  }
+
+  .ventas_content .ventas_usd .v_usd02 {
+    padding: 12px;
+  }
+
+  .Proyecciones_cplus .tabs_plus_btn .dropdown_list {
+    top: -25px;
+  }
+
+  /*** reportes_cliente_area ***/
+  .reportes_cliente_area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reporte_cliente_content {
+    padding: 18px;
+  }
+
+  /*** list all ***/
+  .number_id {
+    font-size: 16px;
+  }
+
+  .list_id_001 li {
+    margin-bottom: 12px;
+  }
+
+  .list_id_001 li a span {
+    font-size: 15px;
+  }
+
+  .list_id_001 li a i {
+    font-size: 14px;
+    width: 28px;
+  }
+
+  /*** reporte ***/
+  .reporte_btns a .next_page_icon {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .reporte_btns a {
+    padding: 0px 15px;
+    font-size: 15px;
+    height: 65px;
+  }
+
+  /*** devolucioness ***/
+  .devoluciones_area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .devoluciones_info_text {
+    font-size: 16px;
+  }
+
+  .open_checked44_area label {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .open_checked44_area input {
+    font-size: 15px;
+  }
+
+  .check_then44[type=checkbox]+label:before {
+
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+
+  /**-::- select -::-**/
+  .bx_blue01 {
+    padding: 15px;
+  }
+
+  .select_bx {
+    height: 50px;
+    font-size: 15px;
+    padding: 0px 18px;
+  }
+
+  .st_from textarea {
+    font-size: 15px;
+  }
+
+  .select_bx .icon_down,
+  .flx_search .icon_down {
+    font-size: 14px;
+  }
+
+  .option_s .option_list {
+    font-size: 15px;
+  }
+
+  .option_content {
+    height: 212px;
+  }
+
+  .option_s .option_list::before {
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--border);
+    margin-right: 10px;
+  }
+
+  .option_s .option_list::after {
+    width: 17px;
+    height: 17px;
+  }
+
+  .option_s_body {
+    width: 100%;
+  }
+
+  .s_btn_area002 #cancel_btn .cancel,
+  .s_btn_area002 #save_btn .save {
+    font-size: 14px;
+    padding: 0px 10px;
+    height: 38px;
+    line-height: 38px;
+  }
+
+  .s_btn_area002 {
+    justify-content: space-between;
+  }
+
+  /**-::::::::- carrito_are  -:::::::::-**/
+  .carrito_are .input_are label,
+  .button_sm1 h3 {
+    font-size: 15px;
+  }
+
+  .carrito_are .input_are .from_int01 {
+    height: 50px;
+  }
+
+  .btn_body44 .btn_f044 {
+    font-size: 15px;
+    padding: 0px 16px;
+    height: 36px;
+    line-height: 36px;
+  }
+
+  .total_bx33 .total-044 {
+    font-size: 15px;
+    padding: 15px 14px !important;
+  }
+
+  .total-04,
+  .button_en .btn-espera {
+    font-size: 15px;
+    padding: 15px 14px !important;
+
+  }
+
+  .button_sm1 .select_bx {
+    height: 40px;
+    font-size: 13px;
+    padding: 0px 10px;
+    width: 150px;
+  }
+
+  .header_content .add_btn_2 {
+    font-size: 16px;
+  }
+
+  .fter_button {
+    padding: 13px;
+  }
+
+  /**-::::::::- reportes_pedidos  -:::::::::-**/
+  .reportes_pedidos {
+    margin: 35px 15px 100px;
+  }
+
+  .sle_bxrp .icon_down {
+    margin-left: 15px;
+  }
+
+  .reportes_pedidos .buscar-rp {
+    font-size: 15px;
+    padding: 15px 14px !important;
+  }
+
+
+  /*** Articulos ***/
+  .shoping_card_area {
+    padding: 35px 18px 125px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Unidad_opt .select_content h3,
+  .s_card_info .scard_title,
+  .usd_s-card .select_bx .usT {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .Unidad_opt .select_content .select_bx {
+    height: 32px;
+  }
+
+  .usd_s-card .select_bx #select_data {
+    font-size: 13px;
+  }
+
+  .Unidad_opt .select_content .select_bx #select_data {
+    font-size: 13px;
+  }
+
+  .s_card_box {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .scBtn_11_area .scBtn_11 {
+    font-size: 15px;
+  }
+
+  .Unidad_opt .cant_are h3 {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .Unidad_opt .cant_are .number_content .count_numbers {
+    height: 32px;
+  }
+
+  .deleted_s_card {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+
+  /*** pedidos_en_espera ***/
+  .rs_grid_22 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .rs_grid_22 .dropdown_list {
+    left: -120px;
+    top: 60px !important;
+  }
+
+  /*** calender ***/
+  .calender_area {
+    height: 50px;
+    font-size: 14px;
+    padding: 0px 18px;
+  }
+
+  .dcalendarpicker.dp__open .dudp__wrapper {
+    transform: translateX(-50%) scale(1.1) translateY(-28%);
+  }
+
+  /*** button ***/
+  .white_btn_are .wt_Btn {
+    font-size: 15px;
+    padding: 15px 14px !important;
+  }
+
+
+  /*** solicitudes ***/
+  .solicitudes-2 {
+    margin: 35px 15px 120px;
+  }
+
+  .max-rem {
+    margin: 35px 18px 120px !important;
+  }
+
+  .stInput_from {
+    height: 50px;
+    font-size: 15px;
+    padding: 0px 18px;
+  }
+
+  /*** search filter ***/
+  .search_areaF {
+    height: 50px;
+    font-size: 15px;
+    padding: 0px 18px;
+  }
+
+  .search_ModelInfo {
+    height: 54px;
+    font-size: 15px;
+    padding: 0px 18px;
+  }
+
+  .search_op_list {
+    font-size: 16px;
+  }
+
+  .search_op_list::before {
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--border);
+    margin-right: 10px;
+  }
+
+  .search_op_list::after {
+    width: 17px;
+    height: 17px;
+  }
+
+  .sol_text {
+    font-size: 15px;
+    margin: 18px 0px;
+  }
+
+  .sc_bx_area {
+    padding: 16px;
+  }
+
+  .sc_input02 {
+    height: 48px;
+    font-size: 15px;
+    padding: 0px 18px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+/**:::::::::::::::::-::::::::::::::::::::**/
+/**:::::::::::::::::300px::::::::::::::::::::**/
+@media (max-width: 300px) {
+
+  /*** sidebar_menus ***/
+  .sidebar_menus {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .sidebar-item-title {
+    font-size: 10px;
+  }
+
+  .sidebar-item {
+    width: 55px;
+    height: 55px;
+  }
+
+  .sidebar-item i {
+    font-size: 16px;
+  }
+
+  .nav-icon i {
+    font-size: 16px;
+  }
+
+  .nav-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  /*** footer ***/
+  .footer .navbar .nav-item.center__box .nav-link span {
+    height: 48px;
+    line-height: 48px;
+    width: 48px;
+  }
+
+  .footer .navbar .nav-item .nav-link span i {
+    font-size: 16px;
+    color: var(--color05);
+  }
+
+
+  /** home page **/
+  .tab-link-wrapper h4 {
+    font-size: 11px;
+  }
+
+  .tab-link-wrapper .nav-link.active .tab-bottom-bar {
+    height: 4px;
+  }
+
+  .blue-box-number-button h5 {
+    font-size: 12px;
+  }
+
+  .white-box h4 {
+    font-size: 14px;
+  }
+
+  .white-box .tab-link-txt {
+    font-size: 12px;
+  }
+
+  .white-box .dark-ash {
+    font-size: 16px;
+  }
+
+  .blue-box-text h5 {
+    font-size: 13px;
+  }
+
+  .bluebox {
+    padding: 12px;
+  }
+
+  /***:::::::::::::- Devoluciones -:::::::::::::***/
+  .header_s .search_icon {
+    padding: 10px 16px;
+  }
+
+  .header_content .add_btn_1,
+  .header_content .header_titles_02 .icon_back_h {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header_titles_02 h2 {
+    font-size: 16px;
+  }
+
+  /*** tabs-content ***/
+  .tab_btns a {
+    font-size: 11px;
+  }
+
+  .tabs_content_bx {
+    padding: 14px;
+  }
+
+
+  .tabs_plus_btn .dropdown_list {
+    width: 115px;
+    left: -122px;
+    top: 0px;
+  }
+
+  /*** facturas_area ***/
+  .facturas_area {
+    gap: 14px;
+  }
+
+  .facturas_list li a {
+    font-size: 14px;
+  }
+
+  .facturas_sub_total .sub_total_01,
+  .facturas_total .total-01 {
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+
+  .facturas_total .total-01 {
+    padding: 15px 15px !important;
+  }
+
+  .facturas_card {
+    padding: 15px;
+  }
+
+  /**-::::::::- factura_area -:::::::::-**/
+
+
+  .seemore_less_area .product-f_title {
+    font-size: 14px;
+  }
+
+  .product-f-card {
+    width: 140px !important;
+  }
+
+
+
+  .factura_usd_area .product-f_title_usd {
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .factura_cant_content .number {
+    padding: 6px 18px;
+    font-size: 14px;
+  }
+
+  /**-::::::::- Pedidos -:::::::::-**/
+  /**:::::::::- table -:::::::::**/
+
+
+  .table>:not(caption)>*>* {
+    padding: 10px 1px;
+  }
+
+  .table_data .table thead tr th {
+    font-size: 12px;
+  }
+
+  .table_data .table tbody tr td {
+    font-size: 11px;
+  }
+
+  /*** list all ***/
+  .number_id {
+    font-size: 14px;
+  }
+
+  .list_id_001 li a span {
+    font-size: 13px;
+  }
+
+  .list_id_001 li a i {
+    font-size: 13px;
+    width: 27px;
+  }
+
+  /*** reporte ***/
+  .reporte_btns a .next_page_icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .reporte_btns a {
+    font-size: 14px;
+    height: 65px;
+  }
+
+  /*** devoluciones ***/
+  .devoluciones_info_text {
+    font-size: 14px;
+  }
+
+  .devoluciones-2,
+  .blue_areas01 {
+    margin: 35px 14px 120px;
+  }
+
+  .bx_blue01 {
+    padding: 15px;
+  }
+
+  .select_bx {
+    height: 48px;
+    font-size: 14px;
+    padding: 0px 14px;
+  }
+
+  .total-04,
+  .button_en .btn-espera {
+    font-size: 13px;
+    padding: 13px !important;
+  }
+
+  .total_bx33 .total-044 {
+    font-size: 13px;
+    padding: 14px !important;
+  }
+
+  .btn_body44 .btn_f044 {
+    font-size: 13px;
+    padding: 0px 14px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .fter_button {
+    padding: 10px;
+  }
+
+  .button_sm1 .select_bx {
+    font-size: 12px;
+  }
+
+
+  /*** calender ***/
+  .dcalendarpicker.dp__open .dudp__wrapper {
+    transform: translateX(-50%) scale(1) translateY(-28%);
+  }
+
+  .calender_area {
+    font-size: 13px;
+  }
+
+}

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>barcode</title>
+
+    <!--::::::::::::::::::::- app CSS -:::::::::::::::::::::-->
+    <link rel="stylesheet" href="./assets/css/Bootstrap.min.css" />
+
+    <!--::::::::::::::::::::- Main CSS -:::::::::::::::::::::-->
+    <link rel="stylesheet" href="./assets/css/css.css" />
+
+    <!--::::::::::::::::::::- Responsive CSS -:::::::::::::::::::::-->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!--::::::::::::::::::::- Icon -:::::::::::::::::::::-->
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <!-- <script src="./assets/js/quagga.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/@zxing/library@latest"
+    ></script>
+
+    <style>
+      button {
+        border: none;
+      }
+
+      .barcdBg {
+        margin: 35px 50px 120px;
+      }
+
+      .brcTitle {
+        color: var(--color07);
+        font-size: 14px;
+      }
+
+      .brcTitle span {
+        color: var(--color04);
+      }
+
+      .barcdBg .screener-area {
+        position: relative;
+        max-width: 500px;
+        display: table;
+        width: 500px;
+        margin: 20px auto;
+        height: 300px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: var(--bx03);
+        background-color: var(--bg02);
+        border-radius: 20px;
+      }
+
+      .barcdBg .screener-area video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+      }
+
+      .bralert01,
+      .bralert02 {
+        color: var(--color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .barcontent {
+        padding: 20px;
+        box-shadow: var(--bx03);
+        background-color: var(--bg02);
+        border-radius: 20px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .barcode_price {
+        outline: none;
+        background: var(--bg03);
+        border: 2px solid var(--bg03);
+        color: var(--color06);
+        font-size: 15px;
+        padding: 4px;
+        border-radius: 8px;
+      }
+
+      .barct_id {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      }
+
+      #SaveEdit {
+        width: 50%;
+        padding: 5px 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .barcode_price:focus {
+        outline: none !important;
+        border: 2px solid var(--bg) !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+      }
+
+      .barct_id h4 {
+        font-size: 18px;
+        color: var(--color02);
+      }
+
+      .number_c .minus_numBtn {
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 16px;
+      }
+
+      .number_c .count_numbers {
+        height: 38px;
+        padding: 0px 10px;
+        border-radius: 6px;
+        color: var(--color01) !important;
+        background: var(--bg) !important;
+        width: 60px;
+        text-align: center;
+        border: none !important;
+        outline: none !important;
+      }
+
+      .bar_cbtn02 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .deleted_bbtn {
+        font-size: 20px;
+        color: rgb(243, 0, 0);
+      }
+
+      /* bar code  */
+      .leser-container {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 0%;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .laser {
+        width: 100%;
+        background-color: tomato;
+        height: 1px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        z-index: 2;
+        box-shadow: 0 0 4px red;
+        animation: scanning 2s infinite;
+      }
+      .vloading {
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+      }
+      .vloading.show {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .diode {
+        animation: beam 0.01s infinite;
+      }
+
+      @keyframes beam {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes scanning {
+        50% {
+          transform: translateY(300px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .barcdBg {
+          margin: 18px 15px 120px;
+        }
+
+        .barcdBg .screener-area {
+          max-width: 430px;
+          display: block;
+          width: 430px;
+          height: 260px;
+          padding: 12px;
+          border-radius: 8px;
+        }
+        /* .leser-container {
+          width: calc(100% - 24%);
+        } */
+        @keyframes scanning {
+          50% {
+            transform: translateY(150px);
+          }
+        }
+      }
+
+      @media (max-width: 480px) {
+        .barcdBg .screener-area {
+          max-width: 320px;
+          width: 320px;
+          height: 190px;
+          padding: 10px;
+        }
+
+        .barct_id h4 {
+          font-size: 15px;
+        }
+
+        .barct_id {
+          display: flex;
+          gap: 8px;
+        }
+
+        .barcode_price {
+          border-radius: 6px;
+        }
+
+        #SaveEdit {
+          width: 40%;
+          padding: 5px 2px;
+          font-size: 13px;
+        }
+
+        .number_c .count_numbers {
+          height: 30px;
+          width: 40px;
+          font-size: 13px;
+        }
+
+        .barcontent {
+          padding: 12px;
+          border-radius: 12px;
+        }
+        /* .leser-container {
+          left: 14%;
+          width: calc(100% - 28%);
+        } */
+      }
+
+      @media (max-width: 300px) {
+        .barcdBg .screener-area {
+          max-width: 100%;
+          width: 100%;
+          height: 150px;
+        }
+
+        .barct_id {
+          display: flex;
+          gap: 8px;
+          width: 65%;
+        }
+
+        .number_c .count_numbers {
+          width: 36px;
+        }
+
+        .barct_id h4 {
+          font-size: 14px;
+        }
+      }
+    </style>
+    <!-- audio when scan done  -->
+    <audio id="beep" preload="auto">
+      <source src="./Assets/barcode.wav" type="audio/mpeg" />
+    </audio>
+  </head>
+
+  <body>
+    <!---::::::::- loading -:::::::::--->
+    <div id="loading-area">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!---::::::::- headers -:::::::::--->
+    <header class="header_02">
+      <div class="header_content">
+        <div class="header_titles_02">
+          <a href="index.html" class="icon_back_h"
+            ><i class="fa-solid fa-arrow-left"></i
+          ></a>
+          <h2>barcode</h2>
+        </div>
+
+        <button class="barcodebtn add_btn_1" id="scanStart">
+          <i class="fa-solid fa-barcode-scan"></i>
+        </button>
+        <button class="barcodebtn add_btn_1 d-none" id="scanStop">
+          <i class="fa-solid fa-barcode-scan"></i>
+        </button>
+      </div>
+      <!--:::- Search bar -:::-->
+      <form action="#" class="input-group mt-4 search_area">
+        <div class="header_s ripple-btn-wrapper">
+          <button class="input-group-text search_icon ripple-button">
+            <img src="Assets/img/Search.svg" alt="" />
+          </button>
+        </div>
+        <input
+          type="text"
+          placeholder="search"
+          class="form-control search_input"
+        />
+      </form>
+    </header>
+
+    <!---::::::::- Corbros_card -:::::::::--->
+    <section class="barcdBg">
+      <h3 class="brcTitle">
+        Toma de inventaria Fisico : <span>#p1213873630003</span>
+      </h3>
+
+      <div class="screener-area">
+        <video src="" id="screener" autoplay playsinline autofocus></video>
+        <div class="spinner-border text-primary vloading show" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="leser-container">
+          <div class="flash-on position-absolute top-0 end-0 m-2">
+            <i class="fa fa-bolt fa-xl text-white" aria-hidden="true"></i>
+          </div>
+          <div class="flash-off d-none position-absolute top-0 end-0 m-2">
+            <i class="fa-solid fa-bolt-slash fa-xl text-white"></i>
+          </div>
+          <div class="diode">
+            <div class="" id="laser"></div>
+          </div>
+        </div>
+      </div>
+      <!-- handle camera -->
+      <div class="controls d-none">
+        <button id="start">Get camera</button>
+        <select id="select">
+          <option></option>
+        </select>
+      </div>
+      <span class="bralert01 d-none" id="screeningText">screening</span>
+      <span class="bralert02 d-none">Stoping</span>
+
+      <div class="savedata" id="result"></div>
+    </section>
+
+    <!---::::::::- footer -:::::::::--->
+    <footer class="footer">
+      <div class="container">
+        <div class="navbar">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <span>
+                <i class="fa-solid fa-house"></i>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="clientes.html" class="nav-link">
+              <span>
+                <i class="fa-solid fa-user"></i>
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item center__box">
+            <a href="articulos.html" class="nav-link">
+              <span class="color__center">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="pedidos.html" class="nav-link">
+              <span>
+                <i class="fa-regular fa-rectangle-list"></i>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="vendedores.html" class="nav-link">
+              <span>
+                <i class="fa-regular fa-user"></i>
+              </span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </footer>
+
+    <!---::::::::- End -:::::::::--->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/Bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!---::::::::- CUSTOM JS -:::::::::--->
+    <script>
+      window.addEventListener("load", function () {
+        const video = document.getElementById("screener");
+        const screeningText = document.getElementById("screeningText");
+        const savedata = document.querySelector(".savedata");
+        const videoElement = document.getElementById("screener");
+        navigator.mediaDevices
+          .getUserMedia({
+            video: {
+              facingMode: "environment",
+            },
+            audio: false,
+          })
+          .then((stream) => {
+            const track = stream.getVideoTracks()[0];
+            videoElement.srcObject = stream;
+            //Create image capture object and get camera capabilities
+            const imageCapture = new ImageCapture(track);
+            const photoCapabilities = imageCapture
+              .getPhotoCapabilities()
+              .then(() => {
+                const flashOn = document.querySelector(".flash-on");
+                const flashOff = document.querySelector(".flash-off");
+
+                flashOn.addEventListener("click", function () {
+                  flashOff.classList.remove("d-none");
+                  flashOn.classList.add("d-none");
+                  track.applyConstraints({
+                    advanced: [{ torch: true }],
+                  });
+                });
+                flashOff.addEventListener("click", function () {
+                  track.applyConstraints({
+                    advanced: [{ torch: false }],
+                  });
+                  flashOff.classList.add("d-none");
+                  flashOn.classList.remove("d-none");
+                });
+              });
+          })
+          .catch((error) => {
+            console.error("Error accessing media devices: ", error);
+          });
+
+        /*---::::::::- BAR CODE SCAN FUNCTIONALITY -:::::::::---*/
+        let idNumber = 1;
+        let scanWork = true;
+        let firstScan = 0;
+        function notify(idNumber, result) {
+          const div = document.createElement("div");
+          div.classList.add("barcontent");
+          div.innerHTML = `<div class="barct_id">
+            <!---id.no---->
+            <h3 class="">${idNumber}.</h3>
+            <!----screencode---->
+            <h4>
+              SKU : <span class="barcode_id">${result.text}</span>
+            </h4>
+            <!----input price---->
+            <input
+              type="text"
+              placeholder="price"
+              class="barcode_price"
+              id="price"
+            />
+            <div class="btn btn-primary" id="SaveEdit">Add</div>
+          </div>
+          <div class="bar_cbtn02">
+            <!--------number count------>
+            <div class="number_c">
+              <button class="minus_numBtn" id="minusCounter">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <input type="number" class="count_numbers" disabled value="1" />
+              <button class="minus_numBtn" id="plusCounter">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <!--------deleted------>
+            <div id="bart_deleted" class="deleted_bbtn">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>`;
+          return div;
+        }
+
+        const stopBarCodeScan = () => {
+          //show scan start button
+          scanStart.classList.remove("d-none");
+          //hide screening text to ui
+          screeningText.classList.add("d-none");
+          //hide scan scanStop button
+          scanStop.classList.add("d-none");
+          //hide laser
+          document.getElementById("laser").classList.remove("laser");
+          scanWork = false;
+        };
+
+        document
+          .getElementById("scanStop")
+          .addEventListener("click", stopBarCodeScan);
+
+        /*---::::::::- BAR CODE CALCULATION -:::::::::---*/
+
+        savedata.addEventListener("click", (e) => {
+          const selectedItem = e.target.parentNode.parentNode.parentNode;
+          if (e.target.parentNode.id === "bart_deleted") {
+            selectedItem.style.display = "none";
+          }
+          //get counter value
+          const count = selectedItem.querySelector(".count_numbers");
+          if (e.target.parentNode.id === "plusCounter") {
+            count.value = count.valueAsNumber + 1;
+          }
+          if (
+            e.target.parentNode.id === "minusCounter" &&
+            count.valueAsNumber > 1
+          ) {
+            count.value = count.valueAsNumber - 1;
+          }
+          //handle price
+          const priceInput = selectedItem.querySelector("#price");
+          if (e.target.id === "SaveEdit") {
+            if (priceInput.disabled) {
+              priceInput.disabled = false;
+              e.target.innerHTML = "Add";
+            } else {
+              if (priceInput.value) {
+                priceInput.disabled = true;
+                e.target.innerHTML = "Edit";
+              }
+            }
+          }
+        });
+        let selectedDeviceId;
+        const vloading = document.querySelector(".vloading");
+        function sleep(delay) {
+          var start = new Date().getTime();
+          console.log("I am running");
+          while (new Date().getTime() < start + delay);
+        }
+        const codeReader = new ZXing.BrowserBarcodeReader();
+        console.log("ZXing code reader initialized");
+        codeReader
+          .getVideoInputDevices()
+          .then((videoInputDevices) => {
+            selectedDeviceId = videoInputDevices[1].deviceId;
+            function detect() {
+              console.log("detect running...");
+              vloading.classList.add("show");
+              screeningText.classList.remove("d-none");
+              //show laser
+              document.getElementById("laser").classList.add("laser");
+              console.log(vloading.classList);
+              codeReader
+                .decodeOnceFromVideoDevice(selectedDeviceId, "screener")
+                .then((result) => {
+                  var beep = document.getElementById("beep");
+                  //beep.play();
+                  document
+                    .getElementById("result")
+                    .append(notify(idNumber, result));
+                  idNumber++;
+                  vloading.classList.remove("show");
+                  //show screening text to ui
+                  screeningText.classList.add("d-none");
+                  //show laser
+                  document.getElementById("laser").classList.remove("laser");
+                  // sleep(3);
+                  // detect();
+                  setTimeout(() => {
+                    detect();
+                  }, 2000);
+                })
+                .catch((err) => {
+                  console.error(err);
+                  document.getElementById("result").textContent = err;
+                  vloading.classList.remove("show");
+                  sleep(3);
+                  detect();
+                });
+              console.log(
+                `Started continous decode from camera with id ${selectedDeviceId}`
+              );
+            }
+            const initBarCodeScan = () => {
+              try {
+                videoElement.srcObject = null;
+                //hide scan start button
+                scanStart.classList.add("d-none");
+                //show screening text to ui
+                // screeningText.classList.remove("d-none");
+                //show scan scanStop button
+                scanStop.classList.remove("d-none");
+                //show laser
+                // document.getElementById("laser").classList.add("laser");
+                //open scan again
+                scanWork = true;
+                detect();
+              } catch (error) {
+                console.log(error);
+              }
+            };
+            scanStart.addEventListener("click", initBarCodeScan);
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      });
+    </script>
+  </body>
+</html>
